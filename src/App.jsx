@@ -10,15 +10,21 @@ import NotFound from "./pages/NotFound";
 const mockData = [
   {
     id: 1,
-    createdDate: new Date().getTime(),
+    createdDate: new Date("2026-07-06").getTime(),
     emotionId: 1,
     content: "오늘은 날씨가 좋았다.",
   },
   {
     id: 2,
-    createdDate: new Date().getTime(),
+    createdDate: new Date("2026-07-05").getTime(),
     emotionId: 2,
     content: "오늘은 날씨가 나빴다.",
+  },
+  {
+    id: 3,
+    createdDate: new Date("2026-06-05").getTime(),
+    emotionId: 3,
+    content: "오늘은 강화가 터졌다.",
   },
 ];
 
@@ -35,8 +41,8 @@ function reducer(state, action) {
   }
 }
 
-const DiaryStateContext = createContext();
-const DiaryDispatchContext = createContext();
+export const DiaryStateContext = createContext();
+export const DiaryDispatchContext = createContext();
 
 function App() {
   const [data, dispatch] = useReducer(reducer, mockData);

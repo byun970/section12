@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import New from "./pages/New";
 import Diary from "./pages/Diary";
 import Edit from "./pages/Edit";
-import NotFound from "./pages/NotFound";
+import NotFound from "./pages/Notfound";
 import { DiaryStateContext, DiaryDispatchContext } from "./contexts/DiaryContext";
 
 function reducer(state, action) {

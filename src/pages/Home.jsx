@@ -1,5 +1,5 @@
 import { useState, useContext } from "react";
-import { DiaryStateContext } from "../App";
+import { DiaryStateContext } from "../contexts/DiaryContext";
 
 import Header from "../components/Header";
 import Button from "../components/Button";

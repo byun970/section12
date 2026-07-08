@@ -1,5 +1,5 @@
 import { useContext, useState, useEffect } from "react";
-import { DiaryStateContext } from "../App";
+import { DiaryStateContext } from "../contexts/DiaryContext";
 import { useNavigate } from "react-router";
 
 const useDiary = (id) => {
